@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "This Will Do — iPhone",
+    "slug": "this-will-do-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "this-will-do-mobile",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.thiswilldo.game"
+    },
+    "android": {},
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-splash-screen",
+      "expo-audio",
+      "expo-asset"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
