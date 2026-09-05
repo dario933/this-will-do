@@ -1,3 +1,4 @@
+import Constants from 'expo-constants';
 import { Platform } from 'react-native';
 import Purchases, {
   PURCHASES_ERROR_CODE,
@@ -26,7 +27,10 @@ export interface PurchaseService {
 
 const ENTITLEMENT_IDENTIFIER = 'full_box';
 const PACKAGE_IDENTIFIER = '$rc_lifetime';
-const IOS_API_KEY = process.env.EXPO_PUBLIC_REVENUECAT_IOS_API_KEY;
+const IOS_API_KEY = (
+  process.env.EXPO_PUBLIC_REVENUECAT_IOS_API_KEY
+  ?? Constants.expoConfig?.extra?.revenueCatIosApiKey
+)?.trim();
 
 let configurePromise: Promise<boolean> | null = null;
 let cachedPackage: PurchasesPackage | null = null;

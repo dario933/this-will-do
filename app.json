@@ -9,11 +9,15 @@
     "userInterfaceStyle": "automatic",
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.thiswilldo.game"
+      "bundleIdentifier": "com.thiswilldo.game",
+      "buildNumber": "2"
     },
     "android": {},
     "web": {
       "favicon": "./assets/images/icon.png"
+    },
+    "extra": {
+      "revenueCatIosApiKey": "appl_fSLwUPYwGhYMadYAXLbSnwLdqBk"
     },
     "plugins": [
       "expo-router",
